@@ -1,0 +1,882 @@
+
+/*start rules*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nanum Gothic", serif;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1140px;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+section {
+    padding: 70px 0;
+}
+/*end rules*/
+
+/*start nav*/
+
+.navbar{
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 4px;
+    z-index: 100;
+    padding: 15px 17px
+}
+
+.navbar .navbar-brand{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.navbar .navbar-brand span{
+    color: #30e3ca;
+    font-weight: 700;
+}
+
+.navbar .nav-link{
+    color: #051441;
+    transition: .3s;
+    font-size: 15px;
+    
+}
+
+@media(max-width: 991px){
+    .navbar .nav-link{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.navbar .nav-link:hover{
+    color: #30e3ca;
+}
+
+
+
+.navbar .btn{
+    color: white;
+    padding: 8px 12px;
+    background-color: #30e3ca;
+    margin-left: 30px;
+}
+
+.login{
+    margin-left: 50px;
+}
+
+.navbar-toggler span{
+    font-size: 22px;
+}
+
+
+/*end nav*/
+
+
+/*start home*/
+
+.home{
+    background-image: url(./images/xhero_2.jpg.pagespeed.ic._xYTRIlPTB.webp);
+    position: relative;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    inset: 0;
+}
+
+.home .container .text h1{
+    color: #ffff;
+
+}
+
+.home .container .text p{
+    color: rgba(255, 255, 255, 0.418);
+    margin-bottom: 15px;
+} 
+
+.home .container form{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+    padding: 20px;
+   
+}
+
+
+.home .container form .form-control{
+    line-height: 2;
+}
+
+.home .container form button{
+    background-color: #30e3ca;
+    border: none;
+}
+
+.home .container form button:active{
+    background-color: #1f9989;
+}
+/*end home*/
+
+
+/*start feature*/
+
+section .feature{
+    background-color: #f8f9fa;
+}
+
+
+section .feature .container .numbers{
+    position: relative;
+    margin-top: -120px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+section .feature .container .numbers a{
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    position: relative;
+    top: 0;
+    color: black;
+}
+
+section .feature .container .numbers a i{
+    font-size: 32px;
+    color: #30e3ca;
+    transition: 0.5s;
+}
+
+section .feature .container .numbers a h5{
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+    transition: 0.5s;
+}
+
+section .feature .container .numbers a p{
+    background-color: #dedede;
+    padding: 1px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+
+
+
+section .feature .container .numbers a:hover {
+    background-color: #30e3ca;
+    top: -20px;
+}
+
+section .feature .container .numbers a:hover h5,
+section .feature .container .numbers a:hover i,
+section .feature .container .numbers a:hover p {
+    color: white;
+}
+
+section .feature .container .ads .card{
+    box-shadow: 0 2px 20px -2px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+overflow: hidden;
+}
+
+section .feature .container .ads .card .text{
+    padding: 20px;
+}
+
+
+section .feature .container .ads .card .img img{
+        object-fit: cover;
+        height: 100%;
+}
+
+section .feature .container .ads .card .text .like p{
+    font-size: 11px;
+    background-color: #dedede;
+    padding: 0 10px;
+    border-radius: 50px;
+    color: black;
+}
+
+
+section .feature .container .ads .card .text .like i{
+    color: #30e3ca;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+section .feature .container .ads .card .text .like i:hover{
+    background-color: red;
+    color: #fff;
+}
+
+section .feature .container .ads .card .text .head h4{ 
+    font-size: 16px;
+    color: #30e3ca;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+section .feature .container .ads .card .text .head p{
+    font-size: 12px;
+}
+
+
+section .feature .container .ads .card .text .rate .icons .active{
+    color: #f89d13;
+}
+
+
+section .feature .container .ads .card .text p{
+    margin: 0;
+}
+
+
+section .feature .container .ads .card .text .rate p{
+    margin-left: 5px;
+}
+/*end feature*/
+
+/*start product*/
+
+
+section .product .container .heading{
+    position: relative;
+    text-align: center;
+}
+
+
+section .product .container .heading::before{
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    width: 80px;
+    border-bottom: 3px solid #30e3ca;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+section .product .container .heading h2{
+    color: #30e3ca;
+    font-weight: 700;
+}
+
+section .product .container .box{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 30px;
+    
+}
+
+
+section .product .container .box img{
+    transition: .4s;
+}
+
+section .product .container .box .overlay{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+
+
+section .product .container .box:hover img{
+    scale: 1.08;
+}
+
+section .product .container .box .overlay a{
+    color: #ffff;
+}
+
+section .product .container .box .overlay .icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 7px 14px;
+    border-radius: 50%;
+    background-color: #888;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+
+section .product .container .box .overlay .icon:hover{
+    background-color: red;
+}
+
+section .product .container .box .overlay .categ{
+    background-color: #30e3ca;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+
+
+section .product .container .box .overlay h4{
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+
+section .product .container .box .overlay p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+
+/*end product*/
+
+/*start trend*/
+
+section .trend{
+    background-color: #f8f9fa!important;
+    padding: 70px 0;
+}
+
+section .trend .heading{
+    position: relative;
+}
+
+section .trend .heading::before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    width: 80px;
+    height: 3px;
+    background-color: #30e3ca;
+}
+
+section .trend .heading h2{
+    color: #30e3ca;
+    font-weight: 700;
+}
+
+
+section .trend .container .card{
+    border: unset;
+    box-shadow: 0 2px 20px -2px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+section .trend .container .card img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section .trend .container .card .card-body{
+    padding: 20px;
+}
+
+section .trend .container .card .card-body .categ p{
+    font-size: 11px;
+    background-color: #dedede;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+
+
+section .trend .container .card .card-body .categ i{
+    color: #30e3ca;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+section .trend .container .card .card-body .categ i:hover{
+    background-color: red;
+    color: #ffff;
+}
+
+section .trend .container .card .card-body .title h4{
+    font-size: 16px;
+    color: #30e3ca;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+section .trend .container .card .card-body .title p{
+    font-size: 12px;
+}
+
+section .trend .container .card .card-body .rate .icons .active{
+    color: #f89d13;
+}
+
+section .trend .container .card .card-body .rate p{
+    margin-left: 5px;
+}
+
+section .trend .container .card p{
+    margin-bottom: 0;
+}
+/*end trend*/
+
+/* start test */
+
+
+
+section .test .container{
+    text-align: center;
+}
+
+section .test .container .heading{
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section .test .container .heading::before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    width: 80px;
+    height: 3px;
+    background-color: #30e3ca;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+section .test .container .heading h2{
+    color: #30e3ca;
+    font-weight: 700;
+}
+
+section .test .container .content .img img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+
+section .test .container .content p{
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+/* end test */
+
+
+/* start blog */
+
+section .blog .box{
+    margin-bottom: 30px;
+}
+
+section .blog .box .img img{
+    border-radius: 5px;
+}
+
+
+section .blog .box h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+section .blog .box .info{
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+section .blog .box .info a{
+    color: #30e3ca;
+}
+
+section .blog .box p{
+    font-size: 14px;
+}
+
+section .blog .container .btn{
+    background: #30e3ca;
+    border: none;
+    outline: unset;
+    color: white;
+}
+
+
+/* end blog */
+
+/* start email */
+
+
+.emailll{
+    padding-bottom: 0;
+}
+
+section .email{
+    background-color: #30e3ca;
+    color: white;
+    padding: 40px 0;
+}
+
+
+section .email form .form-control{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    padding-left: 0;
+    box-shadow: unset;
+}
+
+
+section .email form .form-control::placeholder{
+    color: white;
+    font-style: italic;
+}
+
+section .email form .btn{
+    background-color: white;
+    color: black;
+    border-radius: 0;
+}
+
+
+/* end email */
+
+/* start footer */
+
+footer{
+    padding: 70px 0;
+    background-color: #333;
+    color: white;
+}
+
+footer .row{
+    padding: 70px 0;
+    border-bottom: 1px solid #888;
+    margin-bottom: 50px;
+}
+
+
+footer .row .box1 h6{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.box1 h6 span{
+    color: #30e3ca;
+    
+}
+
+footer .row .box1 p{
+    color: #888;
+    font-size: 14px;
+}
+
+footer .row .info h6{
+    margin-bottom: 20px;
+}
+
+footer .row .info ul li{
+    margin-bottom: 5px;
+    color: #888;
+}
+
+footer .row .info i{
+    color: #888;
+    font-size: 14px;
+}
+
+footer .row .info i:hover{
+    color: #ffff;
+    font-size: 16px;
+}
+
+footer .row .info form input{
+    border-radius: 0;
+    box-shadow: unset;
+}
+
+footer .row .info form input::placeholder{
+    color: #888;
+}
+
+footer .row .info form .btn{
+    background: #30e3ca;
+    border: none;
+    color: white;
+}
+
+footer .last{
+    text-align: center;
+}
+
+footer .last p{
+    color: #888;
+    font-size: 15px;
+}
+
+/* end footer */
+
+
+/*pages------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* start ads page */
+
+.adpage .container .ads .card{
+    box-shadow: 0 2px 20px -2px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+overflow: hidden;
+}
+
+.adpage .container .ads .card .text{
+    padding: 20px;
+}
+
+
+.adpage .container .ads .card .img img{
+        object-fit: cover;
+        height: 188px;
+}
+
+.adpage .container .ads .card .text .like p{
+    font-size: 11px;
+    background-color: #dedede;
+    padding: 0 10px;
+    border-radius: 50px;
+    color: black;
+}
+
+
+.adpage .container .ads .card .text .like i{
+    color: #30e3ca;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.adpage .container .ads .card .text .like i:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.adpage .container .ads .card .text .head h4{ 
+    font-size: 16px;
+    color: #30e3ca;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.adpage .container .ads .card .text .head p{
+    font-size: 12px;
+}
+
+
+.adpage .container .ads .card .text .rate .icons .active{
+    color: #f89d13;
+}
+
+
+.adpage .container .ads .card .text p{
+    margin: 0;
+}
+
+
+.adpage .container .ads .card .text .rate p{
+    margin-left: 5px;
+}
+
+.adpage form{
+    margin-left: 70px;
+}
+
+
+ .pages a{
+    color: white;
+    background-color: #30e3ca;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.pages a.active{
+    background-color: #dedede;
+}
+
+
+/* end */
+
+
+
+/*start home*/
+
+.home2{
+    background-image: url(./images/xhero_2.jpg.pagespeed.ic._xYTRIlPTB.webp);
+    position: relative;
+    height: 60vh;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.home2::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    inset: 0;
+}
+
+.home2 .text p{
+    color: rgba(255, 255, 255, 0.418);
+}
+
+
+/* start blog page */
+
+.blog2 .ml-auto{
+    margin-left: auto;
+}
+
+.blog2 form ul li a{
+    color: #30e3ca;
+}
+
+.blog2 form ul li a span{
+    color: #000000;
+}
+
+
+/* end */
+
+
+/* contact page */
+
+.form form .btn{
+    background: #30e3ca;
+    border: none;
+    color: white;
+}
+
+.form .box p a{
+    color: #30e3ca;
+}
+
+.form .box .btn{
+    background: #30e3ca;
+    border: none;
+    color: white;
+}
+
+
+
+.ask .head{
+    text-align: center;
+    position: relative;
+}
+
+.ask .head::before{
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    width: 80px;
+    border-bottom: 3px solid #30e3ca;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.ask .head h2{
+    color: #30e3ca;
+    font-weight: 700;
+}
+
+.accordion{
+    --bs-accordion-active-bg:#f8f8f8;
+    --bs-accordion-active-color:#30e3ca;
+    --bs-accordion-btn-focus-box-shadow:none;
+}
+
+
+.accordion-button{
+    background-color: #f8f8f8;
+}
+
+/* end */
+
+
+/* start login page */
+
+
+.login .btn{
+    background: #30e3ca;
+    border: none;
+    color: white;
+}
+
+.login span{
+    color: #30e3ca;
+}
+
+/* end */
